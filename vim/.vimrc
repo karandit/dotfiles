@@ -5,6 +5,7 @@ set noundofile
 set number
 set laststatus=2
 set noshowmode
+set showcmd
 set nowrap
 
 set hlsearch

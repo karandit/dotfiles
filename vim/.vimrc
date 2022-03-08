@@ -15,6 +15,8 @@ set incsearch
 set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:¶,precedes:«,extends:»
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 
+set encoding=UTF-8
+
 syntax on
 filetype on
 filetype plugin indent on
@@ -35,6 +37,10 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'itchyny/lightline.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 colorscheme dracula

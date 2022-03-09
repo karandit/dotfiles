@@ -43,10 +43,19 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
+let NERDTreeQuitOnOpen=1
+
 colorscheme dracula
 let g:coc_disable_startup_warning = 1
 let g:lightline = {
       \ 'colorscheme': 'wombat',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'cocstatus', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'cocstatus': 'coc#status'
+      \ },
       \ }
 
 nnoremap <leader>n :NERDTreeFocus<CR>

@@ -1,0 +1,39 @@
+[user]
+	email = tkarandi@gmail.com
+	name = Kárándi Tamás
+	signingkey = 0x217764CF9486AD86
+[commit]
+        gpgsign = true
+[alias]
+	s = status --short
+	st = status
+	ci = commit
+	co = checkout
+	d = diff
+	l = log --oneline --graph --decorate
+	lo = log --oneline --graph --decorate --all
+	br = branch
+	su = status --short -uno
+	pf = push --force-with-lease
+	loo = log --graph --all --pretty='format:%C(auto)%h%d%Creset %C(cyan)(%cr)%Creset %C(green)<%cn>%Creset %s'
+#[core]
+#	pager = diff-so-fancy | less --tabs=4 -RFX
+#[interactive]
+#	diffFilter = diff-so-fancy --patch
+#[color]
+#	ui = true
+#[color "diff-highlight"]
+#	oldNormal = red bold
+#	oldHighlight = red bold 52
+#	newNormal = green bold
+#	newHighlight = green bold 22
+#[color "diff"]
+#	meta = 11
+#	frag = magenta bold
+#	func = 146 bold
+#	commit = yellow bold
+#	old = red bold
+#	new = green bold
+#	whitespace = red reverse
+[safe]
+	directory = /

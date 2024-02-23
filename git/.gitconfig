@@ -37,3 +37,5 @@
 #	whitespace = red reverse
 [safe]
 	directory = /
+[includeIf "gitdir:~/code/c/"]
+        path = .gitconfig-c
